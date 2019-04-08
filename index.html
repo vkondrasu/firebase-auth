@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <title>GameGuidez</title>
+  <title>Programming Guide</title>
 </head>
-<body class="grey lighten-3"">
+<body class="grey lighten-3">
 
   <!-- NAVBAR -->
   <nav class="z-depth-0 grey lighten-4">
@@ -120,6 +120,27 @@
     </ul>
   </div>
   
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA9yr_MtMeVg4gOtAObMafBesf9a6zWkO0",
+    authDomain: "fbaseauth-4545.firebaseapp.com",
+    databaseURL: "https://fbaseauth-4545.firebaseio.com",
+    projectId: "fbaseauth-4545",
+    storageBucket: "fbaseauth-4545.appspot.com", //Not using
+    messagingSenderId: "281386788682" //Not using
+  };
+
+  firebase.initializeApp(config);
+
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+</script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="scripts/auth.js"></script>
